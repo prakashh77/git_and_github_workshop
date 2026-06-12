@@ -1,4 +1,5 @@
-x<!doctype html>
+x
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -204,18 +205,14 @@ x<!doctype html>
             </div>
           </div>
 
-          <div
-            class="bg-devCard border border-devBorder p-5 rounded-xl space-y-2 hover:border-devBlue/30 transition"
-          >
-            <div class="text-devBlue font-bold text-sm tracking-wide uppercase">
-              Step 3: Modify Code
-            </div>
-            <p class="text-sm text-slate-400">
-              Open the folder in VS Code (`code .`). Locate the
-              <code>hi its divya,,,</code> tag and append your structured
-              profile badge block right into the list.
-            </p>
-          </div>
+                <div
+                    class="bg-devCard border border-devBorder p-5 rounded-xl space-y-2 hover:border-devBlue/30 transition">
+                    <div class="text-devBlue font-bold text-sm tracking-wide uppercase">Step 3: Modify Code</div>
+                    <p class="text-sm text-slate-400">Open the folder in VS Code (`code .`). Locate the
+                        <code>hi its divya,,,</code> tag and append your structured profile badge block right
+                        into the list.
+                    </p>
+                </div>
 
           <div
             class="bg-devCard border border-devBorder p-5 rounded-xl space-y-2 hover:border-devBlue/30 transition"
@@ -257,8 +254,8 @@ x<!doctype html>
                 <div
                     class="bg-slate-900/60 border border-devBorder p-3 rounded-lg flex items-center justify-between hover:border-slate-700 transition">
                     <div>
-                        <h4 class="font-medium text-white text-sm">Manyata Shahi</h4> <!-- EDIT ME -->
-                        <span class="text-xs text-slate-500 font-mono">Roll: 13 (CE-1st Yr)</span> <!-- EDIT ME -->
+                        <h4 class="font-medium text-white text-sm">Nitesh Yadav</h4> <!-- EDIT ME -->
+                        <span class="text-xs text-slate-500 font-mono">Roll: 43 (CE-1st Yr)</span> <!-- EDIT ME -->
                     </div>
                     <span
                         class="text-xs bg-devBlue/10 text-devBlue border border-devBlue/20 px-2 py-0.5 rounded font-medium">Contributor</span>
@@ -894,121 +891,46 @@ x<!doctype html>
               overwrite faulty commits and states.
             </p>
 
-            <div class="space-y-3 pt-2">
-              <div class="relative group">
-                <code
-                  class="bg-black text-[11px] text-devRed p-2 pr-8 rounded block font-mono select-all overflow-x-auto whitespace-nowrap border border-slate-900"
-                  >git checkout -- &lt;file-name&gt;</code
-                >
-                <button
-                  onclick="
-                    copyToClipboard(this.previousElementSibling.innerText, this)
-                  "
-                  class="absolute right-2 top-2 text-slate-500 hover:text-white transition opacity-0 group-hover:opacity-100 focus:opacity-100"
-                  title="Copy to clipboard"
-                >
-                  <i class="fa-regular fa-copy"></i>
-                </button>
-                <span class="text-[10px] text-slate-500 block mt-1"
-                  >Discards local uncommitted updates in a target file to match
-                  the last commit.</span
-                >
-              </div>
-              <div class="relative group">
-                <code
-                  class="bg-black text-[11px] text-devRed p-2 pr-8 rounded block font-mono select-all overflow-x-auto whitespace-nowrap border border-slate-900"
-                  >git restore &lt;file-name&gt;</code
-                >
-                <button
-                  onclick="
-                    copyToClipboard(this.previousElementSibling.innerText, this)
-                  "
-                  class="absolute right-2 top-2 text-slate-500 hover:text-white transition opacity-0 group-hover:opacity-100 focus:opacity-100"
-                  title="Copy to clipboard"
-                >
-                  <i class="fa-regular fa-copy"></i>
-                </button>
-                <span class="text-[10px] text-slate-500 block mt-1"
-                  >Modern, safer standard to revert uncommitted local
-                  modifications.</span
-                >
-              </div>
-              <div class="relative group">
-                <code
-                  class="bg-black text-[11px] text-devRed p-2 pr-8 rounded block font-mono select-all overflow-x-auto whitespace-nowrap border border-slate-900"
-                  >git reset HEAD &lt;file-name&gt;</code
-                >
-                <button
-                  onclick="
-                    copyToClipboard(this.previousElementSibling.innerText, this)
-                  "
-                  class="absolute right-2 top-2 text-slate-500 hover:text-white transition opacity-0 group-hover:opacity-100 focus:opacity-100"
-                  title="Copy to clipboard"
-                >
-                  <i class="fa-regular fa-copy"></i>
-                </button>
-                <span class="text-[10px] text-slate-500 block mt-1"
-                  >Removes a specific file from staging area, retaining physical
-                  contents.</span
-                >
-              </div>
-              <div class="relative group">
-                <code
-                  class="bg-black text-[11px] text-devRed p-2 pr-8 rounded block font-mono select-all overflow-x-auto whitespace-nowrap border border-slate-900"
-                  >git commit --amend -m "new message"</code
-                >
-                <button
-                  onclick="
-                    copyToClipboard(this.previousElementSibling.innerText, this)
-                  "
-                  class="absolute right-2 top-2 text-slate-500 hover:text-white transition opacity-0 group-hover:opacity-100 focus:opacity-100"
-                  title="Copy to clipboard"
-                >
-                  <i class="fa-regular fa-copy"></i>
-                </button>
-                <span class="text-[10px] text-slate-500 block mt-1"
-                  >Overwrites the latest commit description message or appends
-                  staged changes.</span
-                >
-              </div>
-              <div class="relative group">
-                <code
-                  class="bg-black text-[11px] text-devRed p-2 pr-8 rounded block font-mono select-all overflow-x-auto whitespace-nowrap border border-slate-900"
-                  >git reset --hard HEAD~1</code
-                >
-                <button
-                  onclick="
-                    copyToClipboard(this.previousElementSibling.innerText, this)
-                  "
-                  class="absolute right-2 top-2 text-slate-500 hover:text-white transition opacity-0 group-hover:opacity-100 focus:opacity-100"
-                  title="Copy to clipboard"
-                >
-                  <i class="fa-regular fa-copy"></i>
-                </button>
-                <span class="text-[10px] text-slate-500 block mt-1"
-                  >Nukes the absolute latest local commit completely out of
-                  existence. Use with caution!</span
-                >
-              </div>
-              <div class="relative group">
-                <code
-                  class="bg-black text-[11px] text-devRed p-2 pr-8 rounded block font-mono select-all overflow-x-auto whitespace-nowrap border border-slate-900"
-                  >git revert &lt;commit-hash&gt;</code
-                >
-                <button
-                  onclick="
-                    copyToClipboard(this.previousElementSibling.innerText, this)
-                  "
-                  class="absolute right-2 top-2 text-slate-500 hover:text-white transition opacity-0 group-hover:opacity-100 focus:opacity-100"
-                  title="Copy to clipboard"
-                >
-                  <i class="fa-regular fa-copy"></i>
-                </button>
-                <span class="text-[10px] text-slate-500 block mt-1"
-                  >Creates a new commit reversing all changes made in specified
-                  historical commit.</span
-                >
-              </div>
+            <!-- HTTPS with Personal Access Token (PAT) -->
+            <div
+                class="bg-devCard border border-devBorder rounded-xl p-6 space-y-5 hover:border-devOrange/30 transition">
+                <div class="flex items-center space-x-3">
+                    <span
+                        class="bg-devOrange/10 text-devOrange font-bold text-xs px-2.5 py-1 rounded-md border border-devOrange/20">METHOD
+                        B</span>
+                    <h3 class="text-lg font-bold text-white">HTTPS with Personal Access Token (PAT)</h3>
+                </div>
+                <p class="text-xs text-slate-400">Authenticate requests via secure API tokens. Perfect if you prefer
+                    standard HTTPS URLs.</p>
+
+                <ol class="space-y-4 text-xs text-slate-300">
+                    <li class="space-y-1">
+                        <span class="font-bold text-white">1. Generate your Token on GitHub:</span>
+                        <p class="text-slate-400">Go to GitHub.com → <strong class="text-white">Settings</strong> →
+                            <strong class="text-white">Developer Settings</strong> → <strong class="text-white">Personal
+                                Access Tokens</strong> → <strong class="text-white">Tokens (classic)</strong>.
+                        </p>
+                    </li>
+                    <li class="space-y-1">
+                        <span class="font-bold text-white">2. Set Permissions & Scope:</span>
+                        <p class="text-slate-400">Click <strong class="text-white">Generate new token
+                                (classic)</strong>, set a description, choose an expiration date, check the box for
+                            <strong class="text-white">repo</strong> access, and generate.
+                        </p>
+                    </li>
+                    <li class="space-y-1">
+                        <span class="font-bold text-white">3. Copy & Secure Token:</span>
+                        <p class="text-slate-400">Copy the token immediately. <span
+                                class="text-devOrange font-medium">Warning: GitHub will not show it again!</span> Save
+                            it somewhere safe.</p>
+                    </li>
+                    <li class="space-y-1.5">
+                        <span class="font-bold text-white">4. Authenticate in Terminal:</span>
+                        <p class="text-slate-400">The next time you execute a command (like `git push`) and Git prompts
+                            you for your GitHub Password, <strong class="text-white">paste this Token</strong> instead
+                            of your normal account password.</p>
+                    </li>
+                </ol>
             </div>
           </div>
         </div>
